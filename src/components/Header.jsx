@@ -22,12 +22,12 @@ export default function Header() {
         <div>
           <ul className="flex space-x-10">
             <li
-              className={` py-3 tet-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute("/")&&"text-black border-b-red-500"} `} onClick={()=>navigate()}
+              className={`cursor-pointer py-3 tet-sm font-semibold text-black-400 border-b-[3px] border-b-transparent ${pathMathRoute("/")&&"text-black border-b-red-500"} `} onClick={()=>navigate()}
             >
               Home
             </li>
-            <li  className={` cursor-pointer py-3 tet-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute("/offers")&&"text-black border-b-red-500"}` } onClick={()=>navigate("/Offers")}>Offers</li>
-            <li  className={` py-3 tet-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute("/sign")&&"text-black border-b-red-500"}`} onClick={()=>navigate("/sign-in")}>Sign in</li>
+            <li  className={` cursor-pointer py-3 tet-sm font-semibold text-black-400 border-b-[3px] border-b-transparent ${pathMathRoute("/offers")&&"text-black border-b-red-500"}` } onClick={()=>navigate("/Offers")}>Offers</li>
+            <li  className={`cursor-pointer py-3 tet-sm font-semibold text-black-400 border-b-[3px] border-b-transparent ${pathMathRoute("/sign")&& "text-black border-b-red-500"}`} onClick={()=>navigate("/sign-in")}>Sign in</li>
           </ul>
         </div>
       </header>
