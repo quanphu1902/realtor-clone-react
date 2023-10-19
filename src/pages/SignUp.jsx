@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { OAuth } from "../components/OAuth";
+import {OAuth} from "../components/OAuth";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -48,8 +48,8 @@ export default function SignUp() {
       formDataCopy.timestamp = serverTimestamp();
 
       await setDoc(doc(db, "users", user.uid), formDataCopy);
-    //   toast.success("Sign up was successful");
-    //   navigate("/");
+      // toast.success("Sign up was successful");
+      // navigate("/");
     } catch (error) {
       toast.error("Something went wrong with the registration");
     }
