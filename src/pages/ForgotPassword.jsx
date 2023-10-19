@@ -23,7 +23,7 @@ export default function ForgotPassword() {
            alt = "key" className='w-full rounded-2xl'/>
         </div>
         <div className='md:w-[67%] lg:w-[40%] mb-12 md:mb-6 lg:ml-20'>
-          <form > 
+          <form  > 
           
           <input
               type="email"
