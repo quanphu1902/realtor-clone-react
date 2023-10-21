@@ -11,7 +11,6 @@ import { db } from "../firebase";
 import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 
 export default function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
