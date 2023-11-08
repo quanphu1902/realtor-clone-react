@@ -10,7 +10,7 @@ export default function Header() {
     }
   }
   return (
-    <div className="bg-white border-b shadow-sm sticky top-0 z-50">
+    <div className="bg-white border-b shadow-sm sticky top-0 z-40">
       <header className="flex justify-between items-center px-3 max-w-6xl mx-auto ">
         <div>
           <img
@@ -27,7 +27,7 @@ export default function Header() {
               Home
             </li>
             <li  className={` cursor-pointer py-3 tet-sm font-semibold text-black-400 border-b-[3px] border-b-transparent ${pathMathRoute("/offers")&&"text-black border-b-red-500"}` } onClick={()=>navigate("/Offers")}>Offers</li>
-            <li  className={`cursor-pointer py-3 tet-sm font-semibold text-black-400 border-b-[3px] border-b-transparent ${pathMathRoute("/sign")&& "text-black border-b-red-500"}`} onClick={()=>navigate("/sign-in")}>Sign in</li>
+            <li  className={`cursor-pointer py-3 tet-sm font-semibold text-black-400 border-b-[3px] border-b-transparent ${pathMathRoute("/Profile")&& "text-black border-b-red-500"}`} onClick={()=>navigate("/Profile")}>Profile</li>
           </ul>
         </div>
       </header>
